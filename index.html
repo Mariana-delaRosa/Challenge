@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet"> 
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/logo.png" alt="alura-logo" >
+        <img class="logo" src="images/logo_ONE_768x408.png" alt="one-logo" >
+    </header>
+    
+    <main>
+
+        <div class="background">
+            <img class="corner" src="images/background.svg" alt="background">
+        </div>
+        
+        <div class="container">
+            <section class="section-left">
+                <textarea class="text-area" cols="30" rows="10" placeholder=" Ingresa el texto a encriptar o desencriptar aqui" onkeypress="return soloLetras(event)"></textarea>
+                <div>
+                    <h6 class="informacion">¡Sólo letras minúsculas y sin acentos!</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="section-right">
+                <textarea class="mensaje" cols="20" rows="10">
+                </textarea>
+                <div class="botones">
+                    <button class="btn-copiar"> Copiar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h3>Challenge<br><em style="font-size: 22px; color: #fff;"> "Encriptador"</em><br>G-5</h3>
+        <p>Realizado por:<br><strong style="font-size: 20px; color: #fff;">Mariana Nabil De la Rosa Briseño</strong><br>2023</p>
+         <img class="latam" src="images/logo-aluralatam-oracle.svg" alt="logo_alura_latam">   
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
